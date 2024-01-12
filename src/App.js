@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React from "react";
+import MyCanvasComponent from "./component/MyCanvasComponent";
+
+// const style = {
+//   main: {
+//     display: "flex",
+//   },
+//   inputBox: {
+//     textAlign: "left",
+//     marginLeft: "50px",
+//     fontSize: "30px",
+//   },
+//   imageContainer: {
+//     textAlign: "right",
+//     width: "25rem",
+//     marginLeft: "15%",
+//     marginTop: "5%",
+//   },
+//   heading: {
+//     borderBottom: "15px solid #F7D43D",
+//     fontWeight: 800,
+//   },
+// };
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <MyCanvasComponent />
+    </>
   );
 }
 
